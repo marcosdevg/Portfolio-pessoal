@@ -3,7 +3,6 @@ export default function initModal() {
   const tabContent = document.querySelectorAll("[data-tab='content'] section");
   const botaoFechar = document.querySelectorAll('[data-modal="fechar"]');
   const containerModal = document.querySelectorAll('[data-modal="container"]');
-  const eventos = ["click", "touchstart"];
 
   if (
     tabBox.length &&
@@ -26,27 +25,21 @@ export default function initModal() {
     }
 
     containerModal.forEach((item, index, content) => {
-      eventos.forEach((evento) => {
-        item.addEventListener(evento, (event) => {
+        item.addEventListener("click", (event) => {
         cliqueForaModal(event, index, content);
       });
-      })
     });
 
     tabBox.forEach((item, index) => {
-      eventos.forEach((evento) => {
-        item.addEventListener(evento, () => {
+        item.addEventListener("click", () => {
           activeTab(index);
         });
-      })
     });
 
     botaoFechar.forEach((item, index) => {
-      eventos.forEach((evento) => {
         item.addEventListener("click", () => {
           fecharModal(index);
         });
-      })
     });
 
   
