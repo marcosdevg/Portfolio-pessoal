@@ -12,7 +12,19 @@ export default function initMenuMobile() {
     } else {
       event.currentTarget.setAttribute("aria-label", "Abrir Menu");
     }
+    if (window.innerWidth <= 768) {
+      var elementos = document.querySelectorAll("#menu li a");
+      elementos.forEach(function(elemento) {
+        elemento.addEventListener("click", toggleMenu);
+      });
+    }
   }
   btnMobile.addEventListener("click", toggleMenu);
   btnMobile.addEventListener("touchstart", toggleMenu);
+
+  /*Para adicinar o evento click no menu quando estiver na versão mobile*/
+  
+    
+  
+  
 }
