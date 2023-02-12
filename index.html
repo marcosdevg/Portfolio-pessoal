@@ -5,279 +5,384 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio | Marcos Gomes - Desenvolvedor Front-End</title>
-    <link rel="stylesheet" href="src/css/style.css"/>
-    <link rel="shortcut icon" href="public/icone-programador.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="public/icone-programador.svg"
+      type="image/x-icon"
+    />
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body>
-      <header>
-        <div><span>&lt;\</span> marcosgomes <span>&gt;</span></div>
-        <nav id="nav">
-          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
-          </button>
-          <ul id="menu" role="menu" data-menu="suave">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skill">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div id="home">
-        <section class="presentation"  data-anime='scroll'>
-          <div class="intro">
-            <div class="title">
-              <p>Olá, o meu nome é</p>
-              <h1>Marcos da Silva Gomes</h1>
-              <h2 id="typedev">Desenvolvedor <span>Front-End</span></h2>
-            </div>
-            <div class="actions">
-              <a href="#" type="application/pdf" target="_blank">Download CV</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/">Entrar em contato</a>
-            </div>
-          </div>
-          <div class="presentation-img"></div>
-        </section>
+    <header>
+      <div><span>&lt;\</span> marcosgomes <span>&gt;</span></div>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu" data-menu="suave">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skill">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="presentation" data-anime="scroll" id="home">
+      <div class="intro">
+        <div class="title">
+          <p>Olá, o meu nome é</p>
+          <h1>Marcos da Silva Gomes</h1>
+          <h2 id="typedev">Desenvolvedor <span>Front-End</span></h2>
+        </div>
+        <div class="actions">
+          <a href="#" type="application/pdf" target="_blank">Download CV</a>
+          <a href="https://www.linkedin.com/in/marcosgomesdev/"
+            >Entrar em contato</a
+          >
+        </div>
       </div>
-      <section class="about-principal" data-anime='scroll' id="about">
-        <h1 class="title">Sobre</h1>
-        <div class="about">
-          <div class="about-author">
-            <img src="public/photo.png" alt="imagem-autor" />
-            <h3>Marcos Gomes</h3>
+      <div class="presentation-img"></div>
+    </section>
+    <section class="about-principal" data-anime="scroll" id="about">
+      <h1 class="title">Sobre</h1>
+      <div class="about">
+        <div class="about-author">
+          <img src="public/my-photo.jpg" alt="imagem-autor" />
+          <h3>Marcos Gomes</h3>
+        </div>
+        <div class="about-description">
+          <h1>Um pouco sobre mim</h1>
+          <p>
+            Olá, meu nome é <strong>Marcos Gomes</strong> e sou um desenvolvedor
+            web. Possuo habilidades sólidas em codificação e uma boa compreensão
+            das tecnologias utilizadas no desenvolvimento front-end, o que me
+            permite criar soluções eficientes e escaláveis. Estou sempre
+            procurando novos desafios e oportunidades para aprender e
+            desenvolver minhas habilidades. Além disso, também realizo alguns
+            projetos por conta própria, o que me permitiu adquirir experiência
+            prática na área.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skill-principal" data-anime="scroll" id="skill">
+      <h1 class="title">Habilidades</h1>
+      <div class="skill-content">
+        <div class="skill">
+          <img src="public/logo-html.svg" alt="logo-html" />
+          <div>HTML</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-css.svg" alt="logo-css" />
+          <div>CSS3</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-javascript.svg" alt="logo-javascript" />
+          <div>JavaScript</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-react.svg" alt="logo-react" />
+          <div>React</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-typescript.svg" alt="logo-typeScript" />
+          <div>TypeScript</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-bootstrap.svg" alt="logo-bootstrap" />
+          <div>Bootstrap</div>
+        </div>
+        <div class="skill">
+          <img src="public/logo-sass.svg" alt="logo-sass" />
+          <div>Sass</div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" data-anime="scroll" id="projects">
+      <h2 class="title">Projetos</h2>
+      <div data-tab="projects-box">
+        <div class="box">
+          <div class="cover">
+            <img src="public/rocket-pay.png" alt="imagem-rocketpay" />
+            <div class="detalhes">
+              <p>RocketPay</p>
+            </div>
           </div>
-          <div class="about-description">
-            <h1>Um pouco sobre mim</h1>
-            <p>
-              Olá, meu nome é <strong>Marcos Gomes</strong> e sou um desenvolvedor web. Possuo habilidades sólidas em codificação e uma boa compreensão das tecnologias utilizadas no desenvolvimento front-end, o que me permite criar soluções eficientes e escaláveis. Estou sempre procurando novos desafios e oportunidades para aprender e desenvolver minhas habilidades. Além disso, também realizo alguns projetos por conta própria, o que me permitiu adquirir experiência prática na área.
-            </p>
+          <div class="descricao">
+            <p>22 de outubro 2022</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="cover">
+            <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
+            <div class="detalhes">
+              <p>Em breve...</p>
+            </div>
+          </div>
+          <div class="descricao">
+            <p>28 de outubro 2021</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="cover">
+            <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
+            <div class="detalhes">
+              <p>Em breve...</p>
+            </div>
+          </div>
+          <div class="descricao">
+            <p>28 de outubro 2021</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="cover">
+            <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
+            <div class="detalhes">
+              <p>Em breve...</p>
+            </div>
+          </div>
+          <div class="descricao">
+            <p>28 de outubro 2021</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="cover">
+            <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
+            <div class="detalhes">
+              <p>Em breve...</p>
+            </div>
+          </div>
+          <div class="descricao">
+            <p>28 de outubro 2021</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="cover">
+            <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
+            <div class="detalhes">
+              <p>Em breve...</p>
+            </div>
+          </div>
+          <div class="descricao">
+            <p>28 de outubro 2021</p>
+            <div>saiba mais</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" data-anime="scroll">
+      <h1 class="title">Contatos</h1>
+      <div class="networks">
+        <a
+          href="https://github.com/marcosdevg"
+          target="_blank"
+          class="networks-link"
+        >
+          <img src="public/icone-github.svg" alt="icone-github" />
+          <p>@marcosdevg</p>
+        </a>
+        <a
+          href="mailto:marcosdev.gomes@gmail.com"
+          target="_blank"
+          class="networks-link"
+        >
+          <img src="public/icone-email.svg" alt="icone-email" />
+          <p>marcosdev.gomes@gmail.com</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marcosgomesdev/"
+          target="_blank"
+          class="networks-link"
+        >
+          <img src="public/icone-linkedin.svg" alt="icone-linkedin" />
+          <p>@marcosgomesdev</p>
+        </a>
+      </div>
+    </footer>
+    <section data-tab="content">
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
+          </div>
+          <h3>RocketPay</h3>
+          <p>
+            O Rocketpay é um projeto que foi criado em um dos evento gratuitos
+            oferecidos pela a RocketSeat, o RocketPay um componente que simula o
+            formulário de preenchimento de cartão de crédito.
+          </p>
+          <p>HTML5 / CSS3 / JavaScript</p>
+          <div class="container-botoes">
+            <a
+              href="https://explorer-lab-01-beta-two.vercel.app/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://github.com/marcosdevg/explorer-lab-01"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/posts/marcosgomesdev_frontend-rockseat-explorerlab-activity-6989957870293250048-Wb2b?utm_source=share&utm_medium=member_desktop"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
           </div>
         </div>
       </section>
-      <section class="skill-principal" data-anime='scroll' id="skill">
-        <h1 class="title">Habilidades</h1>
-        <div class="skill-content">
-          <div class="skill">
-            <img src="public/logo-html.svg" alt="logo-html">  
-            <div>HTML</div>
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
           </div>
-          <div class="skill">
-            <img src="public/logo-css.svg" alt="logo-css">
-            <div>CSS3</div>
-          </div>
-          <div class="skill">
-            <img src="public/logo-javascript.svg" alt="logo-javascript">
-            <div>JavaScript</div>
-          </div>
-          <div class="skill">
-            <img src="public/logo-react.svg" alt="logo-react">
-            <div>React</div>
-          </div>
-          <div class="skill">
-            <img src="public/logo-typescript.svg" alt="logo-typeScript">
-            <div>TypeScript</div>
-          </div>
-          <div class="skill">
-            <img src="public/logo-bootstrap.svg" alt="logo-bootstrap">
-            <div>Bootstrap</div>
-          </div>
-          <div class="skill">
-            <img src="public/logo-sass.svg" alt="logo-sass">
-            <div>Sass</div>
+          <h3>Em breve..</h3>
+          <p>Em breve..</p>
+          <div class="container-botoes">
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
           </div>
         </div>
       </section>
-      <section class="projects" data-anime='scroll' id="projects">
-        <h2 class="title">Projetos</h2>
-        <div data-tab="projects-box">
-          <div class="box">
-            <div class="cover">
-              <img src="public/rocket-pay.png" alt="imagem-rocketpay" />
-              <div class="detalhes">
-                <p>RocketPay</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>22 de outubro 2022</p>
-              <div>saiba mais</div>
-            </div>
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
           </div>
-          <div class="box">
-            <div class="cover">
-              <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
-              <div class="detalhes">
-                <p>Em breve...</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>28 de outubro 2021</p>
-              <div>saiba mais</div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="cover">
-              <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
-              <div class="detalhes">
-                <p>Em breve...</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>28 de outubro 2021</p>
-              <div>saiba mais</div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="cover">
-              <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
-              <div class="detalhes">
-                <p>Em breve...</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>28 de outubro 2021</p>
-              <div>saiba mais</div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="cover">
-              <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
-              <div class="detalhes">
-                <p>Em breve...</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>28 de outubro 2021</p>
-              <div>saiba mais</div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="cover">
-              <img src="public/funto-preto.jpeg" alt="imagem-projeto" />
-              <div class="detalhes">
-                <p>Em breve...</p>
-              </div>
-            </div>
-            <div class="descricao">
-              <p>28 de outubro 2021</p>
-              <div>saiba mais</div>
-            </div>
+          <h3>Em breve..</h3>
+          <p>Em breve..</p>
+          <div class="container-botoes">
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
           </div>
         </div>
       </section>
-      <footer id="contact" data-anime='scroll' >
-        <h1 class="title">Contatos</h1>
-        <div class="networks">
-          <a href="https://github.com/marcosdevg" target="_blank" class="networks-link ">
-            <img src="public/icone-github.svg" alt="icone-github">
-            <p>@marcosdevg</p>
-          </a>
-          <a href="mailto:marcosdev.gomes@gmail.com" target="_blank" class="networks-link ">
-            <img src="public/icone-email.svg" alt="icone-email">
-            <p>marcosdev.gomes@gmail.com</p>
-          </a>
-          <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank" class="networks-link ">
-            <img src="public/icone-linkedin.svg" alt="icone-linkedin">
-            <p>@marcosgomesdev</p>
-          </a>
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
+          </div>
+          <h3>Em breve..</h3>
+          <p>Em breve..</p>
+          <div class="container-botoes">
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
+          </div>
         </div>
-      </footer>
-      <section data-tab="content">
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>RocketPay</h3>
-            <p>O Rocketpay é um projeto que foi criado em um dos evento gratuitos oferecidos pela a RocketSeat, o RocketPay um componente que simula o formulário de preenchimento de cartão de crédito.</p>
-            <p>HTML5 / CSS3 / JavaScript</p>
-            <div class="container-botoes">
-              <a href="https://explorer-lab-01-beta-two.vercel.app/" target="_blank">Acessar projeto</a>
-              <a href="https://github.com/marcosdevg/explorer-lab-01" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/posts/marcosgomesdev_frontend-rockseat-explorerlab-activity-6989957870293250048-Wb2b?utm_source=share&utm_medium=member_desktop" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>Em breve..</h3>
-            <p>Em breve..</p>
-            <div class="container-botoes">
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Acessar projeto</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>Em breve..</h3>
-            <p>Em breve..</p>
-            <div class="container-botoes">
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Acessar projeto</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>Em breve..</h3>
-            <p>Em breve..</p>
-            <div class="container-botoes">
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Acessar projeto</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>Em breve..</h3>
-            <p>Em breve..</p>
-            <div class="container-botoes">
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Acessar projeto</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
-        <section class="modal-container" data-modal="container">
-          <div class="modal">
-            <div data-modal="fechar" class="fechar">
-              <img src="public/icone-fechar.svg" alt="" />
-            </div>
-            <h3>Em breve..</h3>
-            <p>Em breve..</p>
-            <div class="container-botoes">
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Acessar projeto</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="
-              ">Acessar respositório</a>
-              <a href="https://www.linkedin.com/in/marcosgomesdev/" target="_blank">Ver post no linkedin</a>
-            </div>
-          </div>
-        </section>
       </section>
-      
-      <script type="module" src="src/js/script.js"></script>
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
+          </div>
+          <h3>Em breve..</h3>
+          <p>Em breve..</p>
+          <div class="container-botoes">
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <div data-modal="fechar" class="fechar">
+            <img src="public/icone-fechar.svg" alt="" />
+          </div>
+          <h3>Em breve..</h3>
+          <p>Em breve..</p>
+          <div class="container-botoes">
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Acessar projeto</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="
+              "
+              >Acessar respositório</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marcosgomesdev/"
+              target="_blank"
+              >Ver post no linkedin</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script type="module" src="src/js/script.js"></script>
   </body>
 </html>
